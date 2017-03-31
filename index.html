@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Local bootstrap CSS & JS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		h2{
+		text-align: center;
+		text-transform: uppercase;
+		}
+		#nav{
+			border-radius: 0;
+			margin-bottom: 0;
+
+		}
+		#nome{
+			color:#fff;
+			font-size: 44px;
+    		font-weight: 800;
+		}
+		#about{
+			background-color: #222;
+			color: #fff;
+		}
+		.thumbnail{
+			background-color: #222;
+			border: 0;
+			width: 300px;
+			padding: 0;
+			margin-left: 5px;
+		}
+		.logo{
+			z-index: 1;
+    		position: absolute;
+    		margin-left: 40%;
+    		margin-top: 10%;
+		}.bgcover {
+    		position: absolute;
+    		left: 0;
+    		top: 0;
+    		width: 100%;
+    		height: 120%;
+    		background: rgba(0,0,0,0.5) url(http://1.bp.blogspot.com/-vez1u4pSAOE/UyvF0ksiYkI/AAAAAAAABdo/4M0M5C4kZs0/s1600/bgcover1.png);
+    		z-index: -1;
+		}
+		.panel, p{
+			border: none;
+			background-color: #222;
+			text-align: center;
+			color: #fff;
+		}
+
+
+		.carousel {
+		 	z-index: -99;
+		 	height: 600px;} /* keeps this behind all content */
+		.carousel .item {
+		    position: fixed;
+		    width: 100%; height: 100%;
+		    -webkit-transition: opacity 1s;
+		    -moz-transition: opacity 1s;
+		    -ms-transition: opacity 1s;
+		    -o-transition: opacity 1s;
+		    transition: opacity 1s;
+		}
+		.carousel .one {
+		    background: url(arquivos/bg1.jpg);
+		    background-size: cover;
+		    -moz-background-size: cover;
+			filter: grayscale(0.5) blur(3px);
+			-webkit-filter: grayscale(1) blur(3px);
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		.carousel .two {
+		    background: url(arquivos/bg2.jpg);
+		    background-size: cover;
+		    -moz-background-size: cover;
+		    -moz-background-size: cover;
+			filter: grayscale(0.5) blur(3px);
+			-webkit-filter: grayscale(1) blur(3px);
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		.carousel .three {
+		    background: url(arquivos/bg3.jpg);
+		    background-size: cover;
+		    -moz-background-size: cover;
+		    -moz-background-size: cover;
+			filter: grayscale(0.5) blur(3px);
+			-webkit-filter: grayscale(1) blur(3px);
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		.carousel .active.left {
+		    left:0;
+		    opacity:0;
+		    z-index:2;
+		}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" id="myNavbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+         <li><a href="#about">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="row">
+<div class="container-fluid">
+	<nav class="logo">
+		<h3 id="nome">RAMONES</h3>
+		<img src="arquivos/ramones.png" class="img-responsive" alt="Image">
+	</nav>
+
+	<div class="bgcover"></div>
+
+	<div id="myCarousel" class="carousel container slide">
+  		<div class="carousel-inner">
+            <div class="active item one"></div>
+            <div class="item two"></div>
+            <div class="item three"></div>
+  		</div>
+	</div>
+</div>
+</div>
+<div id="about" class="row">
+<div class="container-fluid">
+<hr>
+	<h2 id="sobre">Sobre</h2>
+<hr>
+<div class="panel panel-default">
+	<div class="panel-body">
+  
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="arquivos/no_thumb.jpg" class="img-circle" alt="Nome">
+        <div class="caption">
+        </div>
+      </a>
+      <p>Lorem ipsum...</p>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="arquivos/no_thumb.jpg" class="img-circle" alt="Nome">
+        <div class="caption">
+        </div>
+      </a>
+      <p>Lorem ipsum...</p>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="arquivos/no_thumb.jpg" class="img-circle" alt="Nome" >
+        <div class="caption">
+        </div>
+      </a>
+      <p>Lorem ipsum...</p>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="arquivos/no_thumb.jpg" class="img-circle" alt="Nome">
+        <div class="caption">
+        </div>
+      </a>
+      <p>Lorem ipsum...</p>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({interval: 7000});
+  });
+
+  $(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 20});
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+</body>
+</html>
